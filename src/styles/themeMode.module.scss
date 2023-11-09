@@ -1,0 +1,54 @@
+@use "color";
+@use "util";
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.bar {
+  display: flex;
+  gap: util.rem(8px);
+
+  &_light,
+  &_dark {
+    button {
+      display: flex;
+      align-items: center;
+      padding: util.rem(10px) util.rem(20px);
+      gap: util.rem(6px);
+      border: none;
+      border-radius: util.rem(10px);
+      cursor: pointer;
+      svg {
+        fill: color.$gray-footprint;
+      }
+      span {
+        color: color.$gray-footprint;
+      }
+    }
+  }
+  &_wrapper {
+    padding: util.rem(6px);
+    background-color: color.$bright-gray;
+    border-radius: util.rem(10px);
+  }
+}
+
+.active {
+  button {
+    background-color: color.$white;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+    span {
+      color: color.$dark;
+    }
+    .icon {
+      &_sun {
+        fill: #ffcc7e;
+      }
+      &_moon {
+        fill: #1e40af;
+      }
+    }
+  }
+}
