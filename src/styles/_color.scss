@@ -1,13 +1,61 @@
-$black: #000000;
-$dark: #202123;
-$middle: #343541;
-$bright: #444654;
-
-$gray-footprint: #9a9b9f;
-$gray-icons: #c5c5d1;
-$bright-gray: #ececf1;
 $white: #ffffff;
+$black: #000000;
+$gray-950: #050509;
+$gray-900: #202121;
+$gray-800: #343541;
+$gray-700: #40414f;
+$gray-600: #565869;
+$gray-500: #8e8ea0;
+$gray-400: #acacbe;
+$gray-300: #c5c5d2;
+$gray-200: #d9d9e3;
+$gray-100: #ececf1;
+$gray-50: #f7f7f8;
+$green-accent: #0fa47f;
+$green-dark: #00796d;
+$green-bright: #8dcdb8;
+$yellow: #ffcc7e;
+$red: #e46868;
+$green: #5bba64;
 
-$accent-green: #0fa47f;
-$dark-green: #00897b;
-$bright-green: #8dcdb8;
+/* 테마 모드 */
+$theme-light: (
+  "color-bg": $white,
+  "color-text": $gray-900,
+);
+
+$theme-dark: (
+  "color-bg": $gray-700,
+  "color-text": $gray-100,
+);
+
+$theme-colors: (
+  "primary": (
+    "base": #384ea9,
+    "light": #e4efff,
+    "dark": #273677,
+  ),
+  "themeModeBar": (
+    "btn-active-bg": $white,
+    "bg": $gray-50,
+    "text": $gray-400,
+    "text-active": $gray-900,
+    "dark-btn-active-bg": $gray-600,
+    "dark-bg": $gray-800,
+    "dark-text": $gray-400,
+    "dark-text-active": $white,
+  ),
+  "text": (
+    "light": $gray-900,
+    "dark": $gray-100,
+  ),
+  "background": (
+    "light": $white,
+    "dark": $gray-700,
+  ),
+);
+
+@function theme-color($key: "primary", $variant: "base") {
+  $map: map-get($theme-colors, $key);
+  @return map-get($map, $variant);
+}

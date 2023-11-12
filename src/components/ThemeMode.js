@@ -4,7 +4,7 @@ import { setTheme } from "../redux/themeModeSlice";
 import { ReactComponent as Sun } from "../assets/icons/sun.svg";
 import { ReactComponent as Moon } from "../assets/icons/moon.svg";
 import style from "../styles/themeMode.module.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ThemeMode = () => {
   const dispatch = useDispatch();
@@ -17,8 +17,12 @@ const ThemeMode = () => {
     modifyTheme(mode);
   };
 
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
   return (
-    <header className={style.header}>
+    <header className={`${style.header} ${theme === "dark" ? style.dark : ""}`}>
       <div className={style.bar_wrapper}>
         <ul className={style.bar}>
           <li
