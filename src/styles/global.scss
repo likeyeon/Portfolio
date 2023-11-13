@@ -1,3 +1,17 @@
+@use "color";
+
+:root[data-theme="light"] {
+  background: color.theme-color("background", "light");
+  color: color.theme-color("text", "light");
+  transition: all 0.2s;
+}
+
+:root[data-theme="dark"] {
+  background: color.theme-color("background", "dark");
+  color: color.theme-color("text", "dark");
+  transition: all 0.2s;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

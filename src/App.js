@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 import Main from "./pages/Main";
 import About from "./pages/About";
 import Project from "./pages/Project";
@@ -7,6 +8,11 @@ import Contact from "./pages/Contact";
 import Layout from "./layouts/Layout";
 
 function App() {
+  useEffect(() => {
+    const theme = localStorage.getItem("theme");
+    document.documentElement.setAttribute("data-theme", theme);
+  }, []);
+
   return (
     <BrowserRouter>
       <Routes>

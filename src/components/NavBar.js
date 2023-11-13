@@ -7,9 +7,9 @@ import { ReactComponent as Writing } from "../assets/icons/writing.svg";
 import { ReactComponent as Contact } from "../assets/icons/mail.svg";
 import { ReactComponent as Logo } from "../assets/icons/chatGPT-logo.svg";
 import { ReactComponent as Profile } from "../assets/imgs/profile.svg";
-import style from "../styles/menuBar.module.scss";
+import style from "../styles/navBar.module.scss";
 
-const MenuBar = () => {
+const NavBar = () => {
   const pathname = useLocation().pathname;
 
   return (
@@ -143,4 +143,4 @@ const MenuBar = () => {
   );
 };
 
-export default MenuBar;
+export default NavBar;

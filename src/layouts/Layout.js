@@ -1,14 +1,15 @@
 import { Outlet } from "react-router-dom";
-import MenuBar from "../components/MenuBar";
+import NavBar from "../components/NavBar";
+import style from "../styles/layout.module.scss";
 
 const Layout = () => {
   return (
-    <>
-      <MenuBar />
-      <div className="content">
+    <div className={style.wrapper}>
+      <NavBar />
+      <div className={style.content_wrapper}>
         <Outlet />
       </div>
-    </>
+    </div>
   );
 };
 
