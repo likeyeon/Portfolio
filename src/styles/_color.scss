@@ -18,22 +18,14 @@ $yellow: #ffcc7e;
 $red: #e46868;
 $green: #5bba64;
 
-/* 테마 모드 */
-$theme-light: (
-  "color-bg": $white,
-  "color-text": $gray-900,
-);
-
-$theme-dark: (
-  "color-bg": $gray-700,
-  "color-text": $gray-100,
-);
-
 $theme-colors: (
-  "primary": (
-    "base": #384ea9,
-    "light": #e4efff,
-    "dark": #273677,
+  "text": (
+    "light": $gray-900,
+    "dark": $gray-100,
+  ),
+  "background": (
+    "light": $white,
+    "dark": $gray-700,
   ),
   "themeModeBar": (
     "btn-active-bg": $white,
@@ -44,14 +36,6 @@ $theme-colors: (
     "dark-bg": $gray-800,
     "dark-text": $gray-400,
     "dark-text-active": $white,
-  ),
-  "text": (
-    "light": $gray-900,
-    "dark": $gray-100,
-  ),
-  "background": (
-    "light": $white,
-    "dark": $gray-700,
   ),
 );
 
