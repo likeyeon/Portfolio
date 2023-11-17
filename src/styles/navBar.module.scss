@@ -98,7 +98,7 @@
   color: color.$white;
 }
 
-@media screen and (max-width: util.rem(640px)) {
+@media screen and (max-width: util.rem(767px)) {
   .nav {
     display: none;
 
@@ -114,5 +114,11 @@
 
   .profile {
     padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: util.rem(420px)) {
+  .profile {
+    justify-content: center;
   }
 }
