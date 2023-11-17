@@ -21,17 +21,17 @@ const Main = () => {
                   <li className={style.item}>
                     <Link to="/about">
                       <h2 className={style.item__title}>💁‍♀️ About</h2>
-                      <p className={style.item__description}>
+                      <div className={style.item__description}>
                         제 소개를 하자면...
-                      </p>
+                      </div>
                     </Link>
                   </li>
                   <li className={style.item}>
                     <Link to="/project">
                       <h2 className={style.item__title}>💻 Projects</h2>
-                      <p className={style.item__description}>
+                      <div className={style.item__description}>
                         지금까지 진행한 프로젝트들을 모아 보았어요
-                      </p>
+                      </div>
                     </Link>
                   </li>
                 </div>
@@ -39,17 +39,17 @@ const Main = () => {
                   <li className={style.item}>
                     <Link to="/writing">
                       <h2 className={style.item__title}>✍️ Writing</h2>
-                      <p className={style.item__description}>
+                      <div className={style.item__description}>
                         배운 것을 잊어버리지 않기 위해 기록해왔어요
-                      </p>
+                      </div>
                     </Link>
                   </li>
                   <li className={style.item}>
                     <Link to="/contact">
                       <h2 className={style.item__title}>🤝 Contact</h2>
-                      <p className={style.item__description}>
+                      <div className={style.item__description}>
                         개인적인 대화를 하고 싶다면 메일을 보내주세요
-                      </p>
+                      </div>
                     </Link>
                   </li>
                 </div>

@@ -1,0 +1,14 @@
+@use "color";
+@use "util";
+
+@mixin gradient-text(
+  $topColor: color.$green-dark,
+  $bottomColor: color.$green-accent
+) {
+  background: linear-gradient(180deg, $topColor 20%, $bottomColor 90%);
+  background-clip: text;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: util.rem(20px);
+}

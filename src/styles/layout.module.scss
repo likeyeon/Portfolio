@@ -1,10 +1,9 @@
-@use "color";
-
 .wrapper {
   display: flex;
+  height: 100vh;
 }
 
-.content_wrapper {
+.contents {
   display: flex;
   flex-direction: column;
   width: 100%;

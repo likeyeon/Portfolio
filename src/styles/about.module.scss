@@ -1,0 +1,59 @@
+@use "color";
+@use "util";
+@import "mixin";
+
+.wrapper {
+  overflow-y: auto;
+}
+
+.profile {
+  &__text {
+    margin-top: util.rem(22px);
+
+    p {
+      font-size: util.rem(18px);
+      font-style: normal;
+      line-height: 200%; /* 31.984px */
+    }
+    &--strong {
+      @include gradient-text;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .profile {
+    &__text {
+      p {
+        font-size: util.rem(16px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: util.rem(767px)) {
+  .profile {
+    &__text {
+      p {
+        font-size: util.rem(15px);
+        font-style: normal;
+      }
+      &--strong {
+        font-size: util.rem(17px);
+      }
+    }
+  }
+}
+
+html[data-theme="dark"] {
+  .profile {
+    &__text {
+      &--strong {
+        @include gradient-text(
+          $topColor: color.$green-bright,
+          $bottomColor: color.$white
+        );
+      }
+    }
+  }
+}
