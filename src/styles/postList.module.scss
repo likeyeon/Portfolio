@@ -1,0 +1,116 @@
+@use "color";
+@use "util";
+@import "mixin";
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  gap: util.rem(16px);
+  flex-wrap: wrap;
+}
+
+.post {
+  flex-basis: 48%;
+
+  &-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    &-wrapper {
+      height: util.rem(231px);
+      background-color: color.$white;
+      border-radius: 0px 0px 10px 10px;
+      border: 1px solid color.$gray-800;
+      padding: util.rem(20px) util.rem(18px);
+
+      &:hover .post-contents__title > span {
+        background-position: -100% 0;
+        transition: ease-in-out 0.35s;
+      }
+    }
+
+    &__title {
+      span {
+        font-size: util.rem(20px);
+        color: color.$gray-950;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        background: linear-gradient(
+          to right,
+          rgba(white, 0) 50%,
+          rgba(color.$green-bright, 0.8) 50%
+        );
+        background-size: 200%;
+      }
+    }
+
+    p {
+      margin: 0;
+      font-size: util.rem(16px);
+      line-height: 161.687%; /* 25.87px */
+    }
+
+    &__bottom {
+      height: util.rem(140px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      font-weight: 700;
+
+      span:nth-child(2) {
+        display: flex;
+        align-items: center;
+      }
+
+      &--icon {
+        transition: ease 0.25s;
+        svg {
+          fill: color.$gray-900;
+        }
+      }
+
+      &:hover .post-contents__info--icon {
+        transform: translateX(util.rem(5px));
+      }
+    }
+  }
+}
+
+@media screen and (max-width: util.rem(767px)) {
+  .post {
+    flex-basis: 100%;
+  }
+}
+
+html[data-theme="dark"] {
+  .post {
+    &-contents {
+      &-wrapper {
+        background-color: color.$gray-900;
+        border-color: color.$gray-900;
+      }
+
+      &__title {
+        span {
+          color: color.$gray-50;
+        }
+      }
+
+      &__info--icon {
+        svg {
+          fill: color.$gray-100;
+        }
+      }
+    }
+  }
+}
