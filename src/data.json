@@ -1,0 +1,35 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "웹 프론트엔드 성능 최적화",
+      "content": "사용자 경험의 측면에서 웹 성능 최적화가 필요한 이유와 측정 방법, 최적화 방법에 대해 포스팅을 하였습니다.",
+      "topic": "Web"
+    },
+    {
+      "id": 2,
+      "title": "데이터 타입과 변수",
+      "content": "자바스크립트의 데이터 타입과 변수 var, let, const의 차이에 대해 정리하였습니다.",
+      "topic": "Javascript"
+    },
+    {
+      "id": 3,
+      "title": "SCSS(Sass) 문법 정리",
+      "content": "SCSS에서 주로 쓰이는 문법인 변수, 네팅, 모듈, expand, mixin에 대해 정리하였습니다.",
+      "topic": "CSS"
+    },
+    {
+      "id": 4,
+      "title": "팀 프로젝트 협업 방법",
+      "content": "웹 개발 동아리에서 팀 프로젝트를 주제로 협업 툴과 협업 방법에 대해 강의했을 때의 정리본입니다.",
+      "topic": "React"
+    },
+    {
+      "id": 5,
+      "title": "React 공식문서 Tic-Tac-Toe 실습",
+      "content": "React 공식문서의 미니 프로젝트 Tic-Tac-Toe를 제작하는 과정과 배운 점에 대해 포스팅하였습니다.",
+      "topic": "React"
+    }
+  ],
+  "projects": []
+}
