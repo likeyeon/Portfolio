@@ -10,7 +10,7 @@ const About = () => {
   return (
     <>
       <Header title="💁‍♀️ I am.." />
-      <main className={style.wrapper}>
+      <main>
         <div className={style.main_inner}>
           <section className={style.profile}>
             <UserChat strong="자기소개" plain="를 부탁해." />

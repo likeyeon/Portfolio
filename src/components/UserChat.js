@@ -5,7 +5,9 @@ const UserChat = (props) => {
   return (
     <div className={style["user-wrapper"]}>
       <div className={style["user-inner"]}>
-        <Profile className={style["user-profile"]} />
+        <span>
+          <Profile className={style["user-profile"]} />
+        </span>
         <h2>
           <strong>{props.strong}</strong>
           {props.plain}

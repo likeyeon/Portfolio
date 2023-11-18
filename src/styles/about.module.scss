@@ -2,10 +2,6 @@
 @use "util";
 @import "mixin";
 
-.wrapper {
-  overflow-y: auto;
-}
-
 .profile {
   &__text {
     margin-top: util.rem(22px);
