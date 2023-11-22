@@ -1,0 +1,119 @@
+@use "color";
+@use "util";
+@import "mixin";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: util.rem(691px);
+  gap: util.rem(21px);
+  transition: opacity 0.2s;
+
+  &-top {
+    img {
+      width: 100%;
+    }
+  }
+
+  &-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: util.rem(10px);
+  }
+}
+
+.active {
+  display: none;
+}
+
+.visible {
+  display: flex;
+  opacity: 1;
+}
+
+.inactive {
+  display: flex;
+  opacity: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.tags {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: util.rem(5px);
+  margin-bottom: util.rem(12px);
+
+  span {
+    @include tag;
+    // white-space: nowrap;
+  }
+}
+
+.title {
+  @include title;
+  margin-bottom: util.rem(4px);
+}
+
+.info {
+  color: color.$gray-500;
+  font-size: util.rem(15px);
+  font-weight: 500;
+}
+
+.content {
+  font-size: util.rem(15px);
+  font-weight: 500;
+  line-height: 142.687%; /* 21.403px */
+}
+
+.button {
+  display: flex;
+  gap: util.rem(8px);
+  a {
+    display: flex;
+    padding: util.rem(6px) util.rem(10px);
+    justify-content: center;
+    align-items: center;
+    gap: util.rem(4px);
+    color: color.$white;
+    font-size: util.rem(12px);
+    font-weight: 700;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &--github {
+    background: color.$gray-900;
+  }
+  &--write {
+    background: color.$green-accent;
+  }
+  &--web {
+    background: color.$green-dark;
+  }
+}
+
+html[data-theme="dark"] {
+  .title {
+    @include title($color: color.$gray-50);
+  }
+
+  .tags {
+    span {
+      @include tag(
+        $backgroundColor: color.$gray-600,
+        $textColor: color.$gray-50
+      );
+    }
+  }
+}

@@ -42,7 +42,7 @@ code {
     font-size: 12px;
   }
   svg {
-    width: 16px;
-    height: 16px;
+    width: util.rem(16px);
+    height: util.rem(16px);
   }
 }
