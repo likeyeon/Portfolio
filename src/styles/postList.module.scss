@@ -33,11 +33,7 @@
 
     &__title {
       span {
-        font-size: util.rem(20px);
-        color: color.$gray-950;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+        @include title;
         background: linear-gradient(
           to right,
           rgba(white, 0) 50%,
@@ -79,7 +75,7 @@
         }
       }
 
-      &:hover .post-contents__info--icon {
+      &--text:hover .post-contents__info--icon {
         transform: translateX(util.rem(5px));
       }
     }
@@ -102,7 +98,13 @@ html[data-theme="dark"] {
 
       &__title {
         span {
-          color: color.$gray-50;
+          @include title($color: color.$gray-50);
+          background: linear-gradient(
+            to right,
+            rgba(white, 0) 50%,
+            rgba(color.$green-accent, 0.8) 50%
+          );
+          background-size: 200%;
         }
       }
 

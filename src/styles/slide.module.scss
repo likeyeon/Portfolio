@@ -1,0 +1,120 @@
+@use "color";
+@use "util";
+@import "mixin";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: util.rem(58px);
+
+  svg {
+    cursor: pointer;
+    fill: color.$gray-300;
+  }
+
+  &__icon {
+    &--prev {
+      animation: arrow_prev 1500ms ease-in-out infinite;
+    }
+
+    &--next {
+      animation: arrow_next 1500ms ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes arrow_prev {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes arrow_next {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: util.rem(50px);
+}
+
+.nav {
+  &-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: util.rem(30px);
+  }
+
+  width: util.rem(10px);
+  height: util.rem(10px);
+  background-color: color.$gray-300;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.active {
+  background-color: color.$gray-800;
+  filter: drop-shadow(0 0 1px rgba(color.$gray-800, 0.85));
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: util.rem(767px)) {
+  .top {
+    gap: util.rem(16px);
+
+    &__icon {
+      &--prev,
+      &--next {
+        animation: none;
+        svg {
+          width: util.rem(24px);
+          height: util.rem(24px);
+        }
+      }
+    }
+  }
+}
+
+html[data-theme="dark"] {
+  .top {
+    &__icon {
+      svg {
+        fill: color.$gray-500;
+      }
+    }
+  }
+
+  .nav {
+    background-color: color.$gray-500;
+  }
+
+  .active {
+    background-color: color.$gray-100;
+    filter: drop-shadow(0 0 1px rgba(color.$gray-100, 0.85));
+  }
+}
