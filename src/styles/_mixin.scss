@@ -12,3 +12,18 @@
   -webkit-text-fill-color: transparent;
   font-size: util.rem(20px);
 }
+
+@mixin tag($backgroundColor: color.$gray-200, $textColor: color.$gray-800) {
+  padding: util.rem(4px) util.rem(6px);
+  border-radius: 5px;
+  background: $backgroundColor;
+  color: $textColor;
+  font-size: util.rem(13px);
+  font-weight: 400;
+}
+
+@mixin title($color: color.$gray-950) {
+  font-size: util.rem(20px);
+  color: $color;
+  font-weight: 800;
+}

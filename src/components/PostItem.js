@@ -1,6 +1,6 @@
 import WindowBar from "../components/WindowBar";
 import { Link } from "react-router-dom";
-import { ReactComponent as Arrow } from "../assets/icons/arrow-right.svg";
+import { ReactComponent as Arrow } from "../assets/icons/double-arrow-right.svg";
 import style from "../styles/postList.module.scss";
 
 const PostItem = ({ post }) => {
