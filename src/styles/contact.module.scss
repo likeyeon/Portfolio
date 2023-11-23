@@ -1,0 +1,129 @@
+@use "color";
+@use "util";
+@import "mixin";
+
+p {
+  margin: util.rem(6px) 0;
+  line-height: 140%;
+}
+
+.form {
+  margin-top: util.rem(36px);
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: util.rem(20px);
+  }
+
+  &__left {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: util.rem(16px);
+  }
+
+  &__right {
+    width: 100%;
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    gap: util.rem(10px);
+
+    &--label {
+      color: color.$gray-500;
+      font-weight: 600;
+    }
+
+    &--input {
+      display: flex;
+      padding: util.rem(12px) util.rem(12px);
+      align-items: center;
+      border-radius: util.rem(5px);
+      border: 1px solid color.$gray-400;
+      font-size: util.rem(18px);
+
+      &:focus {
+        outline: 1px solid color.$green-accent;
+      }
+    }
+
+    &--textarea {
+      display: flex;
+      padding: util.rem(12px) util.rem(12px);
+      align-items: center;
+      border-radius: util.rem(5px);
+      border: 1px solid color.$gray-400;
+      font-size: util.rem(18px);
+      height: 100%;
+    }
+  }
+
+  &__textarea {
+    display: flex;
+    flex-direction: column;
+    gap: util.rem(10px);
+    width: 100%;
+    height: 100%;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: util.rem(20px);
+
+    input {
+      display: flex;
+      padding: util.rem(16px) util.rem(70px);
+      justify-content: center;
+      align-items: center;
+      border: none;
+      border-radius: 5px;
+      background: color.$green-accent;
+      color: color.$white;
+      font-size: util.rem(20px);
+      font-weight: 700;
+    }
+  }
+}
+
+html[data-theme="dark"] {
+  .form {
+    &__input {
+      &--label {
+        color: color.$gray-400;
+      }
+
+      &--input,
+      &--textarea {
+        background-color: color.$gray-700;
+        color: color.$gray-100;
+      }
+    }
+  }
+
+  p {
+    color: color.$gray-50;
+  }
+}
+
+@media screen and (max-width: util.rem(767px)) {
+  .form {
+    margin-top: util.rem(24px);
+    &__container {
+      flex-direction: column;
+    }
+
+    &__right {
+      height: util.rem(180px);
+    }
+    &__button {
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
