@@ -6,7 +6,11 @@ import style from "../styles/postList.module.scss";
 const PostItem = ({ post }) => {
   return (
     <article className={style["post"]}>
-      <Link to="/" className={style["post-contents-link"]}>
+      <Link
+        to={post.link}
+        className={style["post-contents-link"]}
+        target="_blank"
+      >
         <WindowBar />
         <div className={style["post-contents-wrapper"]}>
           <div className={style["post-contents"]}>
