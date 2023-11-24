@@ -1,0 +1,39 @@
+@use "color";
+@use "util";
+
+.bar {
+  width: 100%;
+  height: util.rem(33px);
+  display: flex;
+  align-items: center;
+  border-radius: 10px 10px 0px 0px;
+  background: var(--gray-800, #343541);
+  position: relative;
+
+  &--title {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: color.$gray-100;
+  }
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 2.93rem;
+    height: 1rem;
+    position: absolute;
+    top: 0.73rem;
+    left: 1.25rem;
+    background-repeat: no-repeat;
+    background-image: url("../assets/imgs/window-btns.svg");
+  }
+}
+
+@media screen and (max-width: util.rem(420px)) {
+  .bar:before {
+    width: 5rem;
+    left: 0.8rem;
+    transform: scale(0.8);
+  }
+}

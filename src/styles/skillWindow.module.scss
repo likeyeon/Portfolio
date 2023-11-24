@@ -1,0 +1,33 @@
+@use "color";
+@use "util";
+
+.content {
+  background: color.$gray-900;
+  width: 100%;
+  padding: util.rem(21px) util.rem(27px);
+
+  p {
+    color: var(--white, #fff);
+    font-family: Source Code Pro;
+    font-size: util.rem(16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 157.687%;
+
+    h2 {
+      font-weight: 700;
+      font-size: util.rem(18px);
+    }
+  }
+}
+
+@media screen and (max-width: util.rem(767px)) {
+  .content {
+    p {
+      font-size: util.rem(14px);
+    }
+    h2 {
+      font-size: util.rem(16px);
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "웹 프론트엔드 성능 최적화",
+      "content": "사용자 경험의 측면에서 웹 성능 최적화가 필요한 이유와 측정 방법, 최적화 방법에 대해 포스팅을 하였습니다.",
+      "topic": "Web",
+      "link": "https://velog.io/@likeyeon/웹-프론트엔드-성능-최적화"
+    },
+    {
+      "id": 2,
+      "title": "데이터 타입과 변수",
+      "content": "자바스크립트의 데이터 타입과 변수 var, let, const의 차이에 대해 정리하였습니다.",
+      "topic": "Javascript",
+      "link": "https://www.notion.so/f411c87b225c4d32945b1597754a84dd?pvs=4"
+    },
+    {
+      "id": 3,
+      "title": "SCSS(Sass) 문법 정리",
+      "content": "SCSS에서 주로 쓰이는 문법인 변수, 네팅, 모듈, expand, mixin에 대해 정리하였습니다.",
+      "topic": "CSS",
+      "link": "https://github.com/likeyeon/TIL/blob/main/Responsive-web/SCSS%20%EC%86%8C%EA%B0%9C%20%EB%B0%8F%20%EC%8B%A4%EC%8A%B5.md"
+    },
+    {
+      "id": 4,
+      "title": "팀 프로젝트 협업 방법",
+      "content": "웹 개발 동아리에서 협업 툴 사용 방법에 대해 강의했을 때의 정리본입니다.",
+      "topic": "Team project",
+      "link": "https://clever-boot-479.notion.site/18-fa4e440b4df74b2fbc98ff5265f165a6?pvs=4"
+    },
+    {
+      "id": 5,
+      "title": "React 공식문서 Tic-Tac-Toe 실습",
+      "content": "React 공식문서의 미니 프로젝트 Tic-Tac-Toe를 제작하는 과정과 배운 점에 대해 포스팅하였습니다.",
+      "topic": "React",
+      "link": "https://velog.io/@likeyeon/React-공식문서-자습서-Tic-Tac-Toe-실습"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "img": "moco",
+      "title": "PORTFOLIO",
+      "tags": [
+        { "id": 1, "value": "#React" },
+        { "id": 2, "value": "#SCSS" },
+        { "id": 3, "value": "#다크모드" },
+        { "id": 5, "value": "#반응형웹" }
+      ],
+      "info": "2023.10 ~ 2023.11 (개인)",
+      "content": "Chat GPT가 되어 자기소개를 하는 컨셉으로 제작한 포트폴리오입니다. 많은 사람들에게 좋은 사용자 경험을 제공할 수 있도록 다크모드 + 반응형 적용을 세심하게 작업하였습니다.",
+      "github": "https://github.com/likeyeon/Portfolio",
+      "note": "",
+      "demo": "https://hayeoncho.vercel.app/"
+    },
+    {
+      "id": 2,
+      "img": "moco",
+      "title": "IT 스터디 모집 & 장소 공유 웹 사이트",
+      "tags": [
+        { "id": 1, "value": "#Django" },
+        { "id": 2, "value": "#CRUD" },
+        { "id": 3, "value": "#JQuery" },
+        { "id": 4, "value": "#카카오맵 API" },
+        { "id": 5, "value": "#반응형웹" }
+      ],
+      "info": "1차: 2022.08 / 2차: 2022.11 ~ 2023.01 (5명)",
+      "content": "Figma로 직접 디자인하고 반응형으로 작업하여 많은 사람들이 사용할 수 있도록 신경써서 제작하였습니다. 2차 릴리즈 이후 IT 동아리에 배포하여 스터디 모집에 사용하였습니다.",
+      "github": "https://github.com/PIRO17-TEAM-MOCO/moco",
+      "note": "",
+      "demo": "https://drive.google.com/file/d/1mqrXdTOaRUS_ySzwtn5-6xwF5VkxqxeZ/view?usp=sharing"
+    },
+    {
+      "id": 3,
+      "img": "diaryBoard",
+      "title": "일기장 게시판 웹 사이트",
+      "tags": [
+        { "id": 1, "value": "#React + Spring" },
+        { "id": 2, "value": "#CRUD" },
+        { "id": 3, "value": "#axios" },
+        { "id": 4, "value": "#JWT 인증" },
+        { "id": 5, "value": "#redux" },
+        { "id": 6, "value": "#cookie" }
+      ],
+      "info": "2023.09 ~ 2022.10 (2명)",
+      "content": "리액트 + 스프링 협업으로 진행하여 만든 웹 사이트입니다. axios를 이용하여 서버의 API에 요청을 하여 비동기적으로 서버에서 데이터를 CRUD 합니다. jwt를 이용하여 회원가입/로그인과 기타 인증 처리를 하였습니다. 반응형웹으로 만들어져 모든 환경에서 사용가능합니다. ",
+      "github": "https://github.com/likeyeon/diary-board",
+      "note": "https://velog.io/@likeyeon/팀-프로젝트-리액트-기반-일기장-게시판-만들기",
+      "demo": "https://diary-board.vercel.app/"
+    },
+    {
+      "id": 4,
+      "img": "thanksClip",
+      "title": "영상 편지 제작 서비스",
+      "tags": [
+        { "id": 1, "value": "#React" },
+        { "id": 2, "value": "#Tailwind CSS" },
+        { "id": 3, "value": "#퍼블리싱" },
+        { "id": 4, "value": "#path animation" },
+        { "id": 5, "value": "#반응형웹" }
+      ],
+      "info": "2023.01 (4명)",
+      "content": "감사 편지를 작성하고 클립 영상으로 변환하여 카카오톡으로 전송하는 서비스입니다. Figma로 디자인을 하고 React + Tailwind CSS를 이용하여 퍼블리싱 작업을 하였습니다. path animation과 이펙트 API를 넣어 비주얼적인 재미를 주었습니다.",
+      "github": "https://github.com/GDSC-CAU/Thanks-Clip",
+      "note": "https://www.notion.so/Thanks-Clip-c17133206dc244ecb9800394901ea225",
+      "demo": ""
+    },
+    {
+      "id": 5,
+      "img": "gendata",
+      "title": "젠데이터 Clone Coding",
+      "tags": [
+        { "id": 1, "value": "#React" },
+        { "id": 2, "value": "#SCSS" },
+        { "id": 3, "value": "#퍼블리싱" },
+        { "id": 5, "value": "#반응형웹" }
+      ],
+      "info": "2023.08 (4명)",
+      "content": "젠데이터 홈페이지를 퍼블리싱 연습 목적으로 클론코딩 해봤습니다. 아임웹으로 만든 기존 홈페이지의 코드를 리액트로 재구성하여 html 구조를 개선하였습니다.",
+      "github": "https://github.com/likeyeon/Gendata",
+      "note": "https://velog.io/@likeyeon/기업-프로젝트-실전과정-젠데이터-클론-프로젝트-회고",
+      "demo": "https://gendata.vercel.app/"
+    }
+  ]
+}

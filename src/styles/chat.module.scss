@@ -1,0 +1,73 @@
+@use "color";
+@use "util";
+
+.user {
+  &-wrapper {
+    padding: util.rem(24px) util.rem(16px);
+  }
+
+  &-inner {
+    display: flex;
+    margin: 0 auto;
+    max-width: util.rem(932px);
+    flex-direction: row;
+    align-items: center;
+    gap: util.rem(18px);
+
+    h2 {
+      color: color.$black;
+      font-size: util.rem(16px);
+
+      strong {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.ai {
+  &-wrapper {
+    background-color: color.$gray-50;
+    padding: util.rem(24px) util.rem(16px);
+    border-top: 1px solid color.$gray-200;
+    border-bottom: 1px solid color.$gray-200;
+  }
+
+  &-inner {
+    margin: 0 auto;
+    max-width: util.rem(932px);
+    display: flex;
+    flex-direction: row;
+    gap: util.rem(18px);
+  }
+
+  &-contents {
+    width: 100%;
+  }
+}
+
+html[data-theme="dark"] {
+  .user-inner {
+    h2 {
+      color: color.$gray-50;
+    }
+  }
+
+  .ai-wrapper {
+    background-color: color.$gray-700;
+    border-top: 1px solid color.$gray-900;
+    border-bottom: 1px solid color.$gray-900;
+  }
+}
+
+@media screen and (max-width: util.rem(767px)) {
+  // .user-inner {
+  //   gap: util.rem(15px);
+  //   h2 {
+  //     font-size: util.rem(14px);
+  //   }
+  // }
+  .ai-profile {
+    display: none;
+  }
+}
