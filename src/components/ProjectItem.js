@@ -56,7 +56,11 @@ const ProjectItem = ({ project, current }) => {
         <p className={style["content"]}>{project.content}</p>
         <div className={style["button"]}>
           {project.github && (
-            <Link className={style["button--github"]} to={project.github}>
+            <Link
+              className={style["button--github"]}
+              to={project.github}
+              target="_blank"
+            >
               <span>
                 <Github />
               </span>
@@ -64,7 +68,11 @@ const ProjectItem = ({ project, current }) => {
             </Link>
           )}
           {project.note && (
-            <Link className={style["button--write"]} to={project.note}>
+            <Link
+              className={style["button--write"]}
+              to={project.note}
+              target="_blank"
+            >
               <span>
                 <Write />
               </span>
@@ -72,7 +80,11 @@ const ProjectItem = ({ project, current }) => {
             </Link>
           )}
           {project.demo && (
-            <Link className={style["button--web"]} to={project.demo}>
+            <Link
+              className={style["button--web"]}
+              to={project.demo}
+              target="_blank"
+            >
               <span>
                 <Web />
               </span>
