@@ -1,18 +1,16 @@
-import { useDispatch } from "react-redux";
-import { setTheme } from "../redux/themeModeSlice";
-
 import { ReactComponent as Sun } from "../assets/icons/sun.svg";
 import { ReactComponent as Moon } from "../assets/icons/moon.svg";
 import style from "../styles/themeMode.module.scss";
 import { useEffect, useState } from "react";
 
 const ThemeMode = () => {
-  const dispatch = useDispatch();
-  const [theme, modifyTheme] = useState(localStorage.getItem("theme"));
+  const [theme, modifyTheme] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme ? savedTheme : "light";
+  });
 
   /* themeMode 버튼 클릭 함수 */
   const handleClick = (mode) => {
-    dispatch(setTheme(mode));
     localStorage.setItem("theme", mode);
     modifyTheme(mode);
   };
