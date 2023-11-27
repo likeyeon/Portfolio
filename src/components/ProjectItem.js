@@ -4,6 +4,7 @@ import { ReactComponent as Write } from "../assets/icons/write.svg";
 import { ReactComponent as Web } from "../assets/icons/web.svg";
 import { ReactComponent as Github } from "../assets/icons/github.svg";
 import style from "../styles/project.module.scss";
+import portfolio from "../assets/imgs/portfolio.png";
 import moco from "../assets/imgs/moco.png";
 import diaryBoard from "../assets/imgs/diary-board.png";
 import thanksClip from "../assets/imgs/thanksClip.png";
@@ -36,6 +37,7 @@ const ProjectItem = ({ project, current }) => {
     diaryBoard: diaryBoard,
     thanksClip: thanksClip,
     gendata: gendata,
+    portfolio: portfolio,
   };
 
   return (
