@@ -12,7 +12,7 @@
       "title": "데이터 타입과 변수",
       "content": "자바스크립트의 데이터 타입과 변수 var, let, const의 차이에 대해 정리하였습니다.",
       "topic": "Javascript",
-      "link": "https://www.notion.so/f411c87b225c4d32945b1597754a84dd?pvs=4"
+      "link": "https://clever-boot-479.notion.site/f411c87b225c4d32945b1597754a84dd?pvs=4"
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
   "projects": [
     {
       "id": 1,
-      "img": "moco",
+      "img": "portfolio",
       "title": "PORTFOLIO",
       "tags": [
         { "id": 1, "value": "#React" },
@@ -50,7 +50,7 @@
       "info": "2023.10 ~ 2023.11 (개인)",
       "content": "Chat GPT가 되어 자기소개를 하는 컨셉으로 제작한 포트폴리오입니다. 많은 사람들에게 좋은 사용자 경험을 제공할 수 있도록 다크모드 + 반응형 적용을 세심하게 작업하였습니다.",
       "github": "https://github.com/likeyeon/Portfolio",
-      "note": "",
+      "note": "https://velog.io/@likeyeon/포트폴리오-제작-회고글",
       "demo": "https://hayeoncho.vercel.app/"
     },
     {

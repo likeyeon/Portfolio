@@ -27,7 +27,7 @@ const ProfileWindow = () => {
           </Link>
           <br />
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <Link to="https://github.com/likeyeon">
+          <Link to="https://github.com/likeyeon" target="_blank">
             <span className={style.purple}>github</span>
             <span className={style.white}> : </span>
             <span className={style.blue}>likeyeon</span>
@@ -35,7 +35,7 @@ const ProfileWindow = () => {
           </Link>
           <br />
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <Link to="https://velog.io/@likeyeon">
+          <Link to="https://velog.io/@likeyeon" target="_blank">
             <span className={style.purple}>blog</span>
             <span className={style.white}> : </span>
             <span className={style.blue}>likeyeon’s velog</span>
@@ -43,7 +43,10 @@ const ProfileWindow = () => {
           </Link>
           <br />
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <Link to="https://www.linkedin.com/in/%ED%95%98%EC%97%B0-%EC%A1%B0-313169273/">
+          <Link
+            to="https://www.linkedin.com/in/%ED%95%98%EC%97%B0-%EC%A1%B0-313169273/"
+            target="_blank"
+          >
             <span className={style.purple}>linkedIn</span>
             <span className={style.white}> : </span>
             <span className={style.blue}>likeyeon’s linkedIn</span>
@@ -51,7 +54,10 @@ const ProfileWindow = () => {
           </Link>
           <br />
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <Link to="/">
+          <Link
+            to="https://drive.google.com/file/d/1H4yZt2jBXm6cUeMhx-YTGA10U4DZ_CHc/view?usp=sharing"
+            target="_blank"
+          >
             <span className={style.purple}>resume</span>
             <span className={style.white}> : </span>
             <span className={style.blue}>chohayeon resume</span>
