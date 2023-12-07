@@ -57,11 +57,14 @@ const Form = () => {
       <div className={style["form__container"]}>
         <div className={style["form__left"]}>
           <div className={style["form__input"]}>
-            <label className={style["form__input--label"]}>Name</label>
+            <label className={style["form__input--label"]} htmlFor="name">
+              Name
+            </label>
             <input
               className={style["form__input--input"]}
               type="text"
               name="name"
+              id="name"
               onChange={handleNameChange}
               value={name}
               placeholder="성함을 입력해주세요."
@@ -69,11 +72,14 @@ const Form = () => {
             />
           </div>
           <div className={style["form__input"]}>
-            <label className={style["form__input--label"]}>Email</label>
+            <label className={style["form__input--label"]} htmlFor="email">
+              Email
+            </label>
             <input
               className={style["form__input--input"]}
               type="email"
               name="email"
+              id="email"
               onChange={handleEmailChange}
               value={email}
               placeholder="이메일 주소를 입력해주세요."
@@ -81,11 +87,14 @@ const Form = () => {
             />
           </div>
           <div className={style["form__input"]}>
-            <label className={style["form__input--label"]}>Title</label>
+            <label className={style["form__input--label"]} htmlFor="title">
+              Title
+            </label>
             <input
               className={style["form__input--input"]}
               type="text"
               name="title"
+              id="title"
               onChange={handleTitleChange}
               value={title}
               placeholder="제목을 입력해주세요."
@@ -95,10 +104,13 @@ const Form = () => {
         </div>
         <div className={style["form__right"]}>
           <div className={style["form__textarea"]}>
-            <label className={style["form__input--label"]}>Message</label>
+            <label className={style["form__input--label"]} htmlFor="message">
+              Message
+            </label>
             <textarea
               className={style["form__input--textarea"]}
               name="message"
+              id="message"
               onChange={handleMessageChange}
               value={message}
               placeholder="내용을 작성해주세요."
