@@ -38,30 +38,34 @@ const Slide = () => {
   return (
     <div className={`${style.wrapper} ${display ? "" : style.hidden}`}>
       <div className={style.top}>
-        <span
+        <button
           className={style["top__icon--prev"]}
           onClick={() => moveSlide("left")}
+          aria-label="이전 버튼"
         >
           <LeftArrow />
-        </span>
+        </button>
         <ProjectList projectList={dataList.projects} current={currentNum} />
-        <span
+        <button
           className={style["top__icon--next"]}
           onClick={() => moveSlide("right")}
+          aria-label="다음 버튼"
         >
           <RightArrow />
-        </span>
+        </button>
       </div>
       <div className={style.bottom}>
         <ul className={style["nav-wrapper"]}>
           {dataList.projects.map((project, index) => (
-            <li
-              className={`${style["nav"]} ${
-                currentNum === project.id ? style.active : ""
-              }`}
-              key={index}
-              onClick={() => selectSlide(project.id)}
-            ></li>
+            <li key={index} className={style["nav__li"]}>
+              <button
+                className={`${style["nav__btn"]} ${
+                  currentNum === project.id ? style.active : ""
+                }`}
+                onClick={() => selectSlide(project.id)}
+                aria-label={`${index + 1}번째 버튼`}
+              ></button>
+            </li>
           ))}
         </ul>
       </div>

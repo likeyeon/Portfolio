@@ -31,6 +31,7 @@
     &_wrapper {
       padding: util.rem(6px);
       background-color: color.theme-color("themeModeBar", "bg");
+      // border: 1px solid color.$gray-200;
       border-radius: util.rem(10px);
     }
   }
@@ -43,11 +44,9 @@
         color: color.theme-color("themeModeBar", "text-active");
       }
       .icon {
-        &_sun {
-          fill: #ffcc7e;
-        }
+        &_sun,
         &_moon {
-          fill: #1e40af;
+          fill: rgb(255, 205, 69);
         }
       }
     }
@@ -78,14 +77,6 @@
         box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
         span {
           color: color.theme-color("themeModeBar", "dark-text-active");
-        }
-      }
-      .icon {
-        &_sun {
-          fill: #ffcc7e;
-        }
-        &_moon {
-          fill: #1e40af;
         }
       }
     }

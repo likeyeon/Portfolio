@@ -5,12 +5,12 @@
   $topColor: color.$green-dark,
   $bottomColor: color.$green-accent
 ) {
-  background: linear-gradient(180deg, $topColor 20%, $bottomColor 90%);
+  background: linear-gradient(130deg, $bottomColor 20%, $topColor 90%);
   background-clip: text;
   font-weight: 700;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: util.rem(20px);
+  font-size: util.rem(21.5px);
 }
 
 @mixin tag($backgroundColor: color.$gray-200, $textColor: color.$gray-800) {

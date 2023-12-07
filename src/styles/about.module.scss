@@ -10,6 +10,7 @@
       font-size: util.rem(18px);
       font-style: normal;
       line-height: 200%; /* 31.984px */
+      letter-spacing: util.rem(0.3px);
     }
     &--strong {
       @include gradient-text;
