@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   border-radius: 10px 10px 0px 0px;
-  background: var(--gray-800, #343541);
+  background: color.$gray-800;
   position: relative;
 
   &--title {
@@ -35,5 +35,11 @@
     width: 5rem;
     left: 0.8rem;
     transform: scale(0.8);
+  }
+}
+
+html[data-theme="dark"] {
+  .bar {
+    background: color.$gray-900;
   }
 }

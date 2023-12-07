@@ -51,7 +51,6 @@
 
   span {
     @include tag;
-    // white-space: nowrap;
   }
 }
 
@@ -61,7 +60,7 @@
 }
 
 .info {
-  color: color.$gray-500;
+  color: color.$gray-600;
   font-size: util.rem(15px);
   font-weight: 500;
 }
@@ -105,7 +104,7 @@
 
 html[data-theme="dark"] {
   .title {
-    @include title($color: color.$gray-50);
+    @include title($color: color.$white);
   }
 
   .tags {
@@ -115,5 +114,9 @@ html[data-theme="dark"] {
         $textColor: color.$gray-50
       );
     }
+  }
+
+  .info {
+    color: color.$gray-400;
   }
 }

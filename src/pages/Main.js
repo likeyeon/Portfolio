@@ -16,8 +16,8 @@ const Main = () => {
           </div>
           <div className={style["main-below"]}>
             <div className={style.menu}>
-              <ul className={style.menu_inner}>
-                <div className={style["item__group"]}>
+              <div className={style.menu_inner}>
+                <ul className={style["item__group"]}>
                   <li className={style.item}>
                     <Link to="/about">
                       <h2 className={style.item__title}>💁‍♀️ About</h2>
@@ -34,8 +34,8 @@ const Main = () => {
                       </div>
                     </Link>
                   </li>
-                </div>
-                <div className={style["item__group"]}>
+                </ul>
+                <ul className={style["item__group"]}>
                   <li className={style.item}>
                     <Link to="/writing">
                       <h2 className={style.item__title}>✍️ Writing</h2>
@@ -52,12 +52,12 @@ const Main = () => {
                       </div>
                     </Link>
                   </li>
-                </div>
-              </ul>
+                </ul>
+              </div>
             </div>
             <div className={style.input}>
               <div className={style.input__inner}>
-                <input className={style["input--box"]} type="text" disabled />
+                <div className={style["input--box"]} type="text" disabled />
                 <span className={style["input--type"]}>
                   <Typewriter
                     words={["무엇이든 물어보세요 :)"]}
@@ -67,9 +67,9 @@ const Main = () => {
                     cursorStyle="|"
                   />
                 </span>
-                <button className={style["input--icon"]}>
+                <span className={style["input--icon"]}>
                   <Send />
-                </button>
+                </span>
               </div>
             </div>
           </div>

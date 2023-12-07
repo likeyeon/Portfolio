@@ -70,11 +70,12 @@
     gap: util.rem(30px);
   }
 
-  width: util.rem(10px);
-  height: util.rem(10px);
-  background-color: color.$gray-300;
-  border-radius: 50%;
-  cursor: pointer;
+  &__btn {
+    height: util.rem(11.5px);
+    background-color: color.$gray-300;
+    border-radius: 50%;
+    cursor: pointer;
+  }
 }
 
 .active {
@@ -102,10 +103,8 @@
 
 html[data-theme="dark"] {
   .top {
-    &__icon {
-      svg {
-        fill: color.$gray-500;
-      }
+    svg {
+      fill: color.$gray-400;
     }
   }
 

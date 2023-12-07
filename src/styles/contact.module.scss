@@ -34,7 +34,7 @@ p {
     gap: util.rem(10px);
 
     &--label {
-      color: color.$gray-500;
+      color: color.$gray-600;
       font-weight: 600;
     }
 
@@ -59,6 +59,11 @@ p {
       border: 1px solid color.$gray-400;
       font-size: util.rem(18px);
       height: 100%;
+      resize: none;
+
+      &:focus {
+        outline: 1px solid color.$green-accent;
+      }
     }
   }
 
@@ -86,6 +91,7 @@ p {
       color: color.$white;
       font-size: util.rem(20px);
       font-weight: 700;
+      cursor: pointer;
     }
   }
 }
@@ -94,13 +100,17 @@ html[data-theme="dark"] {
   .form {
     &__input {
       &--label {
-        color: color.$gray-400;
+        color: color.$gray-300;
       }
 
       &--input,
       &--textarea {
         background-color: color.$gray-700;
         color: color.$gray-100;
+
+        &::placeholder {
+          color: color.$gray-400;
+        }
       }
     }
   }
