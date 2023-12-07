@@ -57,15 +57,15 @@ const Slide = () => {
       <div className={style.bottom}>
         <ul className={style["nav-wrapper"]}>
           {dataList.projects.map((project, index) => (
-            <li key={index} className={style["nav__li"]}>
-              <button
-                className={`${style["nav__btn"]} ${
-                  currentNum === project.id ? style.active : ""
-                }`}
-                onClick={() => selectSlide(project.id)}
-                aria-label={`${index + 1}번째 버튼`}
-              ></button>
-            </li>
+            <li
+              key={index}
+              className={`${style["nav__li"]} ${
+                currentNum === project.id ? style.active : ""
+              }`}
+              onClick={() => selectSlide(project.id)}
+              tabIndex={0}
+              aria-label={`${project.id}번째 프로젝트로 이동`}
+            ></li>
           ))}
         </ul>
       </div>

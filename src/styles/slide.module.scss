@@ -70,8 +70,9 @@
     gap: util.rem(30px);
   }
 
-  &__btn {
-    height: util.rem(11.5px);
+  &__li {
+    width: util.rem(12px);
+    height: util.rem(12px);
     background-color: color.$gray-300;
     border-radius: 50%;
     cursor: pointer;
