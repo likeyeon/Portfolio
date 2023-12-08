@@ -3,6 +3,7 @@ import ThemeMode from "../components/ThemeMode";
 import { ReactComponent as Send } from "../assets/icons/send.svg";
 import style from "../styles/main.module.scss";
 import { Typewriter } from "react-simple-typewriter";
+import Footer from "../components/Footer";
 
 const Main = () => {
   return (
@@ -75,6 +76,7 @@ const Main = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

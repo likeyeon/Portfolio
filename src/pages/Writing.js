@@ -3,6 +3,7 @@ import UserChat from "../components/UserChat";
 import AiChat from "../components/AiChat";
 import dataList from "../data.json";
 import PostList from "../components/PostList";
+import Footer from "../components/Footer";
 
 const Writing = () => {
   return (
@@ -19,6 +20,7 @@ const Writing = () => {
           </AiChat>
         </section>
       </main>
+      <Footer />
     </>
   );
 };
