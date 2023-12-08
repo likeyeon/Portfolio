@@ -25,6 +25,7 @@
         }
         span {
           color: color.theme-color("themeModeBar", "text");
+          font-size: util.rem(15px);
         }
       }
     }
