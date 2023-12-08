@@ -2,12 +2,15 @@ import Header from "../components/Header";
 import UserChat from "../components/UserChat";
 import AiChat from "../components/AiChat";
 import Form from "../components/Form";
+import Footer from "../components/Footer";
+
+import style from "../styles/contact.module.scss";
 
 const Contact = () => {
   return (
     <>
       <Header title="💌 Contact with me" />
-      <main>
+      <main className={style.main}>
         <section>
           <UserChat plain="더 자세히 얘기를 나누고 싶어. 메일 주소를 알려줘!" />
           <AiChat>
@@ -19,6 +22,7 @@ const Contact = () => {
           </AiChat>
         </section>
       </main>
+      <Footer />
     </>
   );
 };

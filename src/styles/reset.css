@@ -14,7 +14,9 @@ a:visited {
   text-decoration: none;
 }
 html,
-body,
+body {
+  height: 100%;
+}
 div,
 span,
 applet,
