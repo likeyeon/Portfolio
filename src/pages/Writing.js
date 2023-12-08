@@ -5,11 +5,13 @@ import dataList from "../data.json";
 import PostList from "../components/PostList";
 import Footer from "../components/Footer";
 
+import style from "../styles/postList.module.scss";
+
 const Writing = () => {
   return (
     <>
       <Header title="✍️ Articles you may like" />
-      <main>
+      <main className={style.main}>
         <section>
           <UserChat
             strong="새로 배운 지식이나 공유하고 싶은 경험"
