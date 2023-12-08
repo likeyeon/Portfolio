@@ -82,7 +82,17 @@
   }
 }
 
+@media screen and (min-width: util.rem(768px)) {
+  .main {
+    height: 100%;
+  }
+}
+
 @media screen and (max-width: util.rem(767px)) {
+  .main {
+    height: none;
+  }
+
   .post {
     flex-basis: 100%;
   }
