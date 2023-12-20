@@ -1,6 +1,22 @@
 @use "color";
 @use "util";
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  position: relative;
+  animation: fadeIn 1s;
+}
+
 .bar {
   width: 100%;
   height: util.rem(33px);

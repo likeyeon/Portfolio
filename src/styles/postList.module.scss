@@ -9,8 +9,21 @@
   flex-wrap: wrap;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(8%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .post {
   flex-basis: 48%;
+  position: relative;
+  animation: fadeIn 1s;
 
   &-contents {
     display: flex;
@@ -79,12 +92,6 @@
         transform: translateX(util.rem(5px));
       }
     }
-  }
-}
-
-@media screen and (min-width: util.rem(768px)) {
-  .main {
-    height: 100%;
   }
 }
 
