@@ -1,6 +1,22 @@
 @use "color";
 @use "util";
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(8%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  position: relative;
+  animation: fadeIn 1s;
+}
+
 .content {
   background: color.$gray-900;
   width: 100%;

@@ -15,7 +15,7 @@ const About = () => {
         <section className={style.profile}>
           <UserChat strong="자기소개" plain="를 부탁해." />
           <AiChat>
-            <ProfileWindow />
+            <ProfileWindow className={style.profile__window} />
             <div className={style.profile__text}>
               <p>
                 <span className={style["profile__text--strong"]}>Frontend</span>
