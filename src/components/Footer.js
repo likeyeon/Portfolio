@@ -1,8 +1,8 @@
 import style from "../styles/footer.module.scss";
 
-const Footer = () => {
+const Footer = (props) => {
   return (
-    <footer>
+    <footer className={style[`${props.layout}`]}>
       <p className={style.wrap}>
         Copyright © 2023 | Designed & Developed By{" "}
         <strong className={style.strong}> Cho Hayeon</strong>

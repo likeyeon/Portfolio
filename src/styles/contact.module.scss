@@ -2,10 +2,6 @@
 @use "util";
 @import "mixin";
 
-.main {
-  height: 100%;
-}
-
 p {
   margin: util.rem(6px) 0;
   line-height: 140%;

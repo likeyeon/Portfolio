@@ -21,7 +21,7 @@ const Project = () => {
           </AiChat>
         </section>
       </main>
-      <Footer />
+      <Footer layout="full" />
     </>
   );
 };

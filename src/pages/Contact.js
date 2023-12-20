@@ -22,7 +22,7 @@ const Contact = () => {
           </AiChat>
         </section>
       </main>
-      <Footer />
+      <Footer layout="full" />
     </>
   );
 };
